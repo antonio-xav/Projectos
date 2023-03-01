@@ -90,20 +90,19 @@ module.exports = configure(function (ctx) {
     // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js#Property%3A-framework
     framework: {
       config: {
-        config: {
-          brand: {
-            primary: '#ff3b00',
-            secondary: '#26A69A',
-            accent: '#9C27B0',
+        brand: {
+          primary: '#ff3b00',
+          secondary: '#26A69A',
+          accent: '#9C27B0',
 
-            dark: '#1d1d1d',
-            'dark-page': '#121212',
+          dark: '#1d1d1d',
+          'dark-page': '#121212',
 
-            positive: '#21BA45',
-            negative: '#ff3b00',
-            info: '#31CCEC',
-            warning: '#F2C037'
-          }
+          positive: '#21BA45',
+          negative: '#ff3b00',
+          info: '#31CCEC',
+          warning: '#F2C037'
+        }
 
       },
 
