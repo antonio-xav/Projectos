@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-        <strong>CHOUPAL AUTO ACESSORIOS</strong>
+        <div><strong>CHOUPAL</strong> AUTO ACESSORIOS</div>
         </q-toolbar-title>
 
         <div>Logotipo {{ $q.version }}</div>
@@ -43,6 +43,7 @@
       <router-view />
     </q-page-container>
   </q-layout>
+
 </template>
 
 <script>
