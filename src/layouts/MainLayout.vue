@@ -48,26 +48,28 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
+import { biWhatsapp, biInstagram, bienvelopeat } from '@quasar/extras/bootstrap-icons'
 
 const linksList = [
   {
     title: 'Whatsapp',
     caption: '+258844097201',
-    icon: 'history ',
+    icon: 'bi-whatsapp',
     link: 'https://wa.me/258844097201'
   },
   {
     title: 'Instagram',
     caption: '@choupal.auto.acessorios',
-    icon: 'code',
+    icon: 'bi-instagram',
     link: 'https://instagram.com/choupal.auto.acessorios/'
   },
   {
     title: 'E-mail',
     caption: 'choupalautoacessorios@gmail.com',
-    icon: 'email',
+    icon: 'bi-envelope-at',
     link: 'mailto:choupalautoacessorios@gmail.com'
   }
+
 ]
 
 export default defineComponent({
@@ -83,6 +85,9 @@ export default defineComponent({
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
+      biWhatsapp,
+      biInstagram,
+      bienvelopeat,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }

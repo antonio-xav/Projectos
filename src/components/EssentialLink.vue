@@ -44,6 +44,11 @@ export default defineComponent({
     icon: {
       type: String,
       default: ''
+    },
+    bootstrap: {
+      type: String,
+      default: ''
+
     }
   }
 })
