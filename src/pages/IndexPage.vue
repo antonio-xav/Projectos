@@ -1,7 +1,4 @@
-<template>
-  <div class="q-pa-md">
-    <div class="row items-start q-gutter-md">
-    <q-responsive :ratio="4/3" class="col" style="max-height: 100px">
+<!--<template>
  <div class="flex flex-center"><strong>PAGINA</strong>-EM-CONSTRUÇÃO</div>
   <q-page class="flex flex-center">
     <img
@@ -10,16 +7,48 @@
       style="width: 860px; height: 353px"
     >
   </q-page>
-</q-responsive>
-</div>
+
+</template>-->
+<template>
+  <div  height="100px">
+    <q-toolbar class="bg-white text-white shadow-3 rounded-borders">
+      <q-btn flat label="Homepage" />
+      <q-space />
+
+      <!--
+        notice shrink property since we are placing it
+        as child of QToolbar
+      -->
+      <q-tabs v-model="tab" shrink stretch>
+        <q-tab name="tab1" label="HOME" :style="{color:'grey'}"/>
+        <q-tab name="tab2" label="ACESSORIOS" :style="{color:'grey'}"/>
+        <q-tab name="tab3" label="SOBRE" :style="{color:'grey'}"/>
+      </q-tabs>
+    </q-toolbar>
+
+    <q-page class="flex flex-center">
+      <div class="flex flex-center"><strong>PAGINA</strong>-EM-CONSTRUÇÃO</div>
+
+  </q-page>
   </div>
 
 </template>
-
-<script>
+<!--<script>
 import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IndexPage'
 })
+</script>-->
+
+<script>
+import { ref } from 'vue'
+
+export default {
+  setup () {
+    return {
+      tab: ref('')
+    }
+  }
+}
 </script>
