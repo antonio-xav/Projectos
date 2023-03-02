@@ -63,10 +63,10 @@ const linksList = [
     link: 'https://instagram.com/choupal.auto.acessorios/'
   },
   {
-    title: 'Facebook',
-    caption: 'choupal.auto.acessorios',
-    icon: 'public',
-    link: 'https://facebook.com'
+    title: 'E-mail',
+    caption: 'choupalautoacessorios@gmail.com',
+    icon: 'email',
+    link: 'mailto:choupalautoacessorios@gmail.com'
   }
 ]
 
