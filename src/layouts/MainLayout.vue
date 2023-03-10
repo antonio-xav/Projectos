@@ -12,7 +12,20 @@
         />
 
         <q-toolbar-title>
-        <div><strong>CHOUPAL</strong> AUTO ACESSORIOS</div>
+        <!--     <img
+      alt="Choupal_logo"
+      src="~assets/Choupal_logo_png.png"
+
+      <strong>CHOUPAL </strong> AUTO ACESSORIOS
+
+    >
+  --><div ><img
+      alt="Choupal_logo"
+      src="~assets/Choupal_Logo_png.png"
+      style="width: 200px; height: 50px; "
+      >
+    </div>
+
         </q-toolbar-title>
 
         <div>Logotipo {{ $q.version }}</div>

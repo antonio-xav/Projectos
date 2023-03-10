@@ -25,9 +25,15 @@
         <q-tab name="tab3" label="SOBRE" :style="{color:'grey'}"/>
       </q-tabs>
     </q-toolbar>
-
+    <div class="flex flex-center"><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
     <q-page class="flex flex-center">
-      <div class="flex flex-center"><strong>PAGINA</strong>-EM-CONSTRUÇÃO</div>
+
+      <img
+      padding="200px"
+      alt="Choupal_logo"
+      src="~assets/Choupal_Auto_png.png"
+
+    >
 
   </q-page>
   </div>
