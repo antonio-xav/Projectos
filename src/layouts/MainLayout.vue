@@ -15,15 +15,14 @@
         <!--     <img
       alt="Choupal_logo"
       src="~assets/Choupal_logo_png.png"
-
-      <strong>CHOUPAL </strong> AUTO ACESSORIOS
+      alt="Choupal_logo"
+      src=""
+      style=" "
 
     >
-  --><div ><img
-      alt="Choupal_logo"
-      src="~assets/Choupal_Logo_png.png"
-      style="width: 200px; height: 50px; "
-      >
+  -->
+  <div>
+    <strong>HOME</strong>
     </div>
 
         </q-toolbar-title>
@@ -62,7 +61,7 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
-import { biWhatsapp, biInstagram, bienvelopeat } from '@quasar/extras/bootstrap-icons'
+import { biWhatsapp, biInstagram, biEnvelopeCheck } from '@quasar/extras/bootstrap-icons'
 
 const linksList = [
   {
@@ -80,7 +79,7 @@ const linksList = [
   {
     title: 'E-mail',
     caption: 'choupalautoacessorios@gmail.com',
-    icon: 'bi-envelope-at',
+    icon: 'bi-envelope-check',
     link: 'mailto:choupalautoacessorios@gmail.com'
   }
 
@@ -101,7 +100,7 @@ export default defineComponent({
       leftDrawerOpen,
       biWhatsapp,
       biInstagram,
-      bienvelopeat,
+      biEnvelopeCheck,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }

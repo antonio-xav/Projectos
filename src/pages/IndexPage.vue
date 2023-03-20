@@ -29,9 +29,10 @@
     <q-page class="flex flex-center">
 
       <img
-      padding="200px"
+
       alt="Choupal_logo"
-      src="~assets/Choupal_Auto_png.png"
+      src="~assets/quasar-logo-vertical.svg"
+      style=" "
 
     >
 
