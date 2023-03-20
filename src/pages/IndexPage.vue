@@ -31,7 +31,7 @@
       <img
 
       alt="Choupal_logo"
-      src="~assets/quasar-logo-vertical.svg"
+      src="~assets/Choupal_Auto.png"
       style=" "
 
     >
