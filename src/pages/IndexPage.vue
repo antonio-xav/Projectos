@@ -31,8 +31,8 @@
       <img
 
       alt="Choupal_logo"
-      src="~assets/Choupal_Auto.png"
-      style=" "
+      src="~assets/Choupal_logo_01.png"
+      style=""
 
     >
 
