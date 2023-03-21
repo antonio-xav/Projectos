@@ -29,12 +29,17 @@
     <q-page class="flex flex-center">
 
       <img
-
+      v-if="$q.platform.is.desktop"
       alt="Choupal_logo"
       src="~assets/Choupal_logo_01.png"
       style=""
-
-    >
+      >
+      <img
+      v-if="$q.platform.is.mobile"
+      alt="Choupal_logo"
+      src="~assets/Choupal_Auto.png"
+      style="width: 50%; height: 50%"
+      >
 
   </q-page>
   </div>
@@ -50,12 +55,17 @@ export default defineComponent({
 
 <script>
 import { ref } from 'vue'
+import { useQuasar } from 'quasar'
 
 export default {
+
   setup () {
+    const $q = useQuasar()
     return {
-      tab: ref('')
+      tab: ref(''),
+      $q
     }
   }
+
 }
 </script>
