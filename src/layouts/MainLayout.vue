@@ -16,7 +16,6 @@
       alt="Choupal_logo"
       src="~assets/Choupal_logo_01.png"
       alt="Choupal_logo"
-      src=""
       style=" "
 
     >
@@ -27,7 +26,21 @@
 
         </q-toolbar-title>
 
-        <div>Logotipo</div>
+        <div>
+
+          <img
+          v-if="$q.platform.is.desktop"
+        alt="Choupal_logo"
+        src="~assets/Choupal_Auto_07.png"
+        style="height: 55px;"
+       >
+       <img
+          v-if="$q.platform.is.mobile"
+        alt="Choupal_logo"
+        src="~assets/Choupal_Logo_02.png"
+        style="height: 55px;"
+       >
+    </div>
       </q-toolbar>
     </q-header>
 
