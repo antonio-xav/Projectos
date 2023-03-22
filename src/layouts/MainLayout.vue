@@ -57,13 +57,19 @@
       <q-page-sticky position="bottom-right" :offset="[18,18]">
             <q-fab
               v-if="$q.platform.is.mobile"
-              icon="add"
+              icon="keyboard_arrow_up"
               direction="up"
               color="primary"
+              :disable="draggingFab"
+              v-touch-pan.prevent.mouse="moveFab"
+              external-label
+              label-position="left"
+              label="links"
+
             >
-              <q-fab-action @click="abrirEmail" color="primary" icon="bi-envelope-check" />
-              <q-fab-action @click="abrirInstagram" color="primary" icon="bi-instagram" />
-              <q-fab-action @click="abrirChat" type="submit" color="primary" icon="bi-whatsapp"  />
+              <q-fab-action @click="abrirEmail" color="primary" icon="bi-envelope-check" :disable="draggingFab" />
+              <q-fab-action @click="abrirInstagram" color="primary" icon="bi-instagram" :disable="draggingFab"/>
+              <q-fab-action @click="abrirChat" type="submit" color="primary" icon="bi-whatsapp"  :disable="draggingFab"/>
           </q-fab>
           </q-page-sticky>
     </q-page-container>
