@@ -21,7 +21,10 @@
     >
   -->
   <div>
-    <strong>HOME</strong>
+    <q-icon name="bi-house-gear">
+  </q-icon>
+  <span class="label">     Home</span>
+
     </div>
 
         </q-toolbar-title>
@@ -93,7 +96,7 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
-import { biWhatsapp, biInstagram, biEnvelopeCheck } from '@quasar/extras/bootstrap-icons'
+import { biWhatsapp, biInstagram, biEnvelopeCheck, biHouseGear } from '@quasar/extras/bootstrap-icons'
 import { useQuasar } from 'quasar'
 
 const linksList = [
@@ -151,6 +154,7 @@ export default defineComponent({
       biInstagram,
       biEnvelopeCheck,
       $q,
+      biHouseGear,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
       }
