@@ -23,7 +23,7 @@
     >
   -->
   <div>
-    <strong style="position:;">Home Page </strong>
+    <strong style="position:;">Acessorios</strong>
 
     </div>
 
@@ -123,7 +123,7 @@ const linksList = [
 ]
 
 export default defineComponent({
-  name: 'MainLayout',
+  name: 'MainLayout2',
   components: {
     EssentialLink
   },

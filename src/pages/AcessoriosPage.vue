@@ -14,13 +14,18 @@
 
     <q-toolbar class="bg-white text-white shadow-3 rounded-borders">
 
-      <q-btn flat label="Homepage" />
+      <q-btn flat label="AcessoriosPage" />
 
       <q-space />
 
       <!--
         notice shrink property since we are placing it
         as child of QToolbar
+            <q-tabs v-model="tab" shrink stretch>
+        <q-tab :to="{name: 'index'}" name="index" label="HOME" :style="{color:'grey'}"/>
+        <q-tab :to="{name: '/acessorios'}"  label="ACESSORIOS" :style="{color:'grey'}"/>
+        <q-tab name="tab3" label="SOBRE" :style="{color:'grey'}"/>
+      </q-tabs>
       -->
       <q-tabs
     v-model="tab" shrink stretch
@@ -30,10 +35,10 @@
     <q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE" :style="{color:'grey'}"/>
   </q-tabs>
     </q-toolbar>
-    <div class="flex flex-center"><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
+    <div class="flex flex-center" style="color: red;"><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
     <q-page class="flex flex-center">
 
-      <img
+     <!-- <img
       v-if="$q.platform.is.desktop"
       alt="Choupal_logo"
       src="~assets/Choupal_logo_01.png"
@@ -44,7 +49,8 @@
       alt="Choupal_logo"
       src="~assets/Choupal_Auto.png"
       style="width: 50%; height: 50%"
-      >
+      >-->
+      <strong style="color: red;"><h6>Pagina Destinada a Listagens dos Acessorios</h6></strong>
 
   </q-page>
   </div>
@@ -54,7 +60,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'IndexPage'
+  name: 'AcessoriosPage'
 })
 </script>-->
 
@@ -63,7 +69,7 @@ import { ref, defineComponent } from 'vue'
 import { useQuasar } from 'quasar'
 
 export default defineComponent({
-  name: 'IndexPage',
+  name: 'AcessoriosPage',
 
   setup () {
     const $q = useQuasar()
