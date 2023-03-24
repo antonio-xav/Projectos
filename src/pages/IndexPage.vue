@@ -1,39 +1,29 @@
-<!--<template>
- <div class="flex flex-center"><strong>PAGINA</strong>-EM-CONSTRUÇÃO</div>
-  <q-page class="flex flex-center">
-    <img
-      alt="PAGINA EM CONSTRUÇÃO"
-      src="~assets/page-under-construt.png"
-      style="width: 860px; height: 353px"
-    >
-  </q-page>
-
-</template>-->
 <template>
-  <div  height="100px">
+  <div class="q-gutter-y-md bg-white text-red shadow-3 rounded-borders" height="100%">
 
-    <q-toolbar class="bg-white text-white shadow-3 rounded-borders">
+<q-tabs
+v-model="tab"   inline-label
+>
+<q-route-tab :to="{ name: 'index'  }"  @click="navDelay" label="HOME"/>
+<q-route-tab :to="{ name:'acessorios'}" @click="navCancel" label="ACESSORIOS"/>
+<q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE"/>
+</q-tabs>
 
-      <q-btn flat label="Homepage" />
+</div>
+<div  height="100%"  class="q-gutter-y-md"  >
 
-      <q-space />
+    <div class="flex flex-center"></div>
 
-      <!--
-        notice shrink property since we are placing it
-        as child of QToolbar
-      -->
-      <q-tabs
-    v-model="tab" shrink stretch
-  >
-    <q-route-tab :to="{ name: 'index'  }"  @click="navDelay" label="HOME" :style="{color:'grey'}"/>
-    <q-route-tab :to="{ name:'acessorios'}" @click="navCancel" label="ACESSORIOS" :style="{color:'grey'}"/>
-    <q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE" :style="{color:'grey'}"/>
-  </q-tabs>
-    </q-toolbar>
-    <div class="flex flex-center"><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
     <q-page class="flex flex-center">
+      <div class="q-pa-md flex flex-center">
 
-      <img
+        <div class="column flex-center">
+          <div ><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
+          <div ><h5><strong style="color: #ff0000"><br>PAGINA INICIAL</strong></h5></div>
+        </div>
+        </div>
+
+     <!--  <img
       v-if="$q.platform.is.desktop"
       alt="Choupal_logo"
       src="~assets/Choupal_logo_01.png"
@@ -44,19 +34,12 @@
       alt="Choupal_logo"
       src="~assets/Choupal_Auto.png"
       style="width: 50%; height: 50%"
-      >
+      >-->
 
   </q-page>
   </div>
 
 </template>
-<!--<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'IndexPage'
-})
-</script>-->
 
 <script>
 import { ref, defineComponent } from 'vue'

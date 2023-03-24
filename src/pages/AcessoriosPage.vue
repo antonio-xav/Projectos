@@ -1,68 +1,145 @@
-<!--<template>
- <div class="flex flex-center"><strong>PAGINA</strong>-EM-CONSTRUÇÃO</div>
-  <q-page class="flex flex-center">
-    <img
-      alt="PAGINA EM CONSTRUÇÃO"
-      src="~assets/page-under-construt.png"
-      style="width: 860px; height: 353px"
-    >
-  </q-page>
-
-</template>-->
 <template>
-  <div  height="100px">
 
-    <q-toolbar class="bg-white text-white shadow-3 rounded-borders">
+  <div class="q-gutter-y-md bg-white text-red shadow-3 rounded-borders" height="100%">
 
-      <q-btn flat label="AcessoriosPage" />
+          <q-tabs
+        v-model="tab"   inline-label
+          >
+        <q-route-tab :to="{ name: 'index'  }"  @click="navDelay" label="HOME" />
+        <q-route-tab :to="{ name:'acessorios'}" @click="navCancel" label="ACESSORIOS"/>
+        <q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE"/>
+          </q-tabs>
 
-      <q-space />
+    </div>
 
-      <!--
-        notice shrink property since we are placing it
-        as child of QToolbar
-            <q-tabs v-model="tab" shrink stretch>
-        <q-tab :to="{name: 'index'}" name="index" label="HOME" :style="{color:'grey'}"/>
-        <q-tab :to="{name: '/acessorios'}"  label="ACESSORIOS" :style="{color:'grey'}"/>
-        <q-tab name="tab3" label="SOBRE" :style="{color:'grey'}"/>
-      </q-tabs>
-      -->
-      <q-tabs
-    v-model="tab" shrink stretch
-  >
-    <q-route-tab :to="{ name: 'index'  }"  @click="navDelay" label="HOME" :style="{color:'grey'}"/>
-    <q-route-tab :to="{ name:'acessorios'}" @click="navCancel" label="ACESSORIOS" :style="{color:'grey'}"/>
-    <q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE" :style="{color:'grey'}"/>
-  </q-tabs>
-    </q-toolbar>
-    <div class="flex flex-center" style="color: red;"><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
-    <q-page class="flex flex-center">
+    <div class="flex flex-center" style=""></div>
 
-     <!-- <img
-      v-if="$q.platform.is.desktop"
-      alt="Choupal_logo"
-      src="~assets/Choupal_logo_01.png"
-      style=""
+    <div class="column items-center" style="height: 150px">
+      <div class="col">
+        <H5><STRONG>PAGINA EM CONSTRUÇÃO</STRONG></H5>
+      </div>
+      <div class="col">
+        <H5><STRONG style="color: #ff0000">ACESSORIOS</STRONG></H5>
+      </div>
+    </div>
+
+  <div class="q-pa-md">
+
+    <div class="q-gutter-md row items-center flex flex-center">
+
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 300w,
+                https://cdn.quasar.dev/img/image-2x.png 2x,
+                https://cdn.quasar.dev/img/image-3x.png 3x,
+                https://cdn.quasar.dev/img/image-4x.png 4x"
+        style="height: 280px; max-width: 300px"
       >
-      <img
-      v-if="$q.platform.is.mobile"
-      alt="Choupal_logo"
-      src="~assets/Choupal_Auto.png"
-      style="width: 50%; height: 50%"
-      >-->
-      <strong style="color: red;"><h6>Pagina Destinada a Listagens dos Acessorios</h6></strong>
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset
+        </div>
+      </q-img>
 
-  </q-page>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+      <q-img
+        src="https://cdn.quasar.dev/img/image-src.png"
+        srcset="https://cdn.quasar.dev/img/image-1x.png 400w,
+                https://cdn.quasar.dev/img/image-2x.png 800w,
+                https://cdn.quasar.dev/img/image-3x.png 1200w,
+                https://cdn.quasar.dev/img/image-4x.png 1600w"
+        sizes="(max-width: 400px) 400w,
+              (min-width: 400px) and (max-width: 800px) 800w,
+              (min-width: 800px) and (max-width: 1200px) 1200w,
+              (min-width: 1200px) 1600w"
+        style="height: 280px; max-width: 300px"
+      >
+        <div class="absolute-bottom text-body1 text-center">
+          With srcset & sizes
+        </div>
+      </q-img>
+    </div>
   </div>
 
 </template>
-<!--<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'AcessoriosPage'
-})
-</script>-->
 
 <script>
 import { ref, defineComponent } from 'vue'

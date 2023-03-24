@@ -88,6 +88,22 @@
               <q-fab-action @click="abrirChat" type="submit" color="primary" icon="bi-whatsapp"  :disable="draggingFab"/>
           </q-fab>
           </q-page-sticky>
+          <q-layout view="lhh LpR lff">
+      <q-footer>
+        <q-toolbar>
+          <q-toolbar-title>
+            <q-tabs
+                v-model="tab" shrink stretch
+              >
+                <q-route-tab :to="{ name: 'index'  }"  @click="navDelay" label="HOME" :style="{color:'white'}"/>
+                <q-route-tab :to="{ name:'acessorios'}" @click="navCancel" label="ACESSORIOS" :style="{color:'white'}"/>
+                <q-route-tab :to="{ name: 'ErrorNotFound' }" @click="navCancel" label="SOBRE" :style="{color:'white'}"/>
+              </q-tabs>
+
+          </q-toolbar-title>
+        </q-toolbar>
+      </q-footer>
+    </q-layout>
     </q-page-container>
   </q-layout>
 
