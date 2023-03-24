@@ -14,11 +14,10 @@ v-model="tab"   inline-label
 
     <div class="flex flex-center"></div>
 
-    <q-page class="flex flex-center">
-      <div class="q-pa-md flex flex-center">
+      <div class="column items-center" style="height: 150px">
 
         <div class="column flex-center">
-          <div ><h5><strong>PAGINA </strong> EM CONSTRUÇÃO</h5></div>
+          <H5><STRONG>PAGINA EM CONSTRUÇÃO</STRONG></H5>
           <div ><h5><strong style="color: #ff0000"><br>PAGINA INICIAL</strong></h5></div>
         </div>
         </div>
@@ -36,7 +35,6 @@ v-model="tab"   inline-label
       style="width: 50%; height: 50%"
       >-->
 
-  </q-page>
   </div>
 
 </template>
