@@ -89,6 +89,7 @@
           </q-fab>
           </q-page-sticky>
           <q-layout view="lhh LpR lff">
+
       <q-footer>
         <q-toolbar>
           <q-toolbar-title>
@@ -103,6 +104,7 @@
           </q-toolbar-title>
         </q-toolbar>
       </q-footer>
+
     </q-layout>
     </q-page-container>
 

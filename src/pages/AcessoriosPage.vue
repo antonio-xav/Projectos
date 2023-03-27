@@ -23,7 +23,7 @@
       </div>
     </div>
 
-  <div class="q-pa-md">
+ <!----> <div class="q-pa-md">
 
     <div class="q-gutter-md row items-center flex flex-center">
 

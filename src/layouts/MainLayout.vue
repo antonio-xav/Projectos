@@ -70,6 +70,7 @@
 
     <q-page-container>
       <router-view />
+
       <q-page-sticky position="bottom-right" :offset="[18,18]">
             <q-fab
               v-if="$q.platform.is.mobile"
@@ -88,8 +89,10 @@
               <q-fab-action @click="abrirChat" type="submit" color="primary" icon="bi-whatsapp"  :disable="draggingFab"/>
           </q-fab>
           </q-page-sticky>
+
           <q-layout view="lhh LpR lff">
-      <q-footer>
+
+            <q-footer>
         <q-toolbar>
           <q-toolbar-title>
             <q-tabs
